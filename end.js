@@ -30,6 +30,6 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));// stringifying the highscore object again before saving it in localstorage
-    window.location.assign('/');// when scores are saved redirects to home page
+    window.location.assign('index.html');// when scores are saved redirects to home page
     //  window - is global object , location - property of window
 };
