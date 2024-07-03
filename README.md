@@ -36,7 +36,7 @@ Use any browser to open the `index.html` file and start using the app.
 
 ## Demo
 
-Check out a live demo [here](link-to-demo).
+Check out a live demo [here](https://ghaniketrajputp005.github.io/Blitz-Quiz/).
 
 ## Contribution
 
