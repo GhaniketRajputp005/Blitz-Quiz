@@ -22,7 +22,7 @@ Welcome to Blitz Quiz, a straightforward and easy-to-use quiz app built using HT
 ## Getting Started
 
 1. **Clone the repository**: git clone [https://github.com/GhaniketRajputp005/BlitzQuiz.git](https://github.com/GhaniketRajputp005/Quiz-Application.git)
-2. **Navigate to the project directory**:cd blitzquiz
+2. **Navigate to the project directory**:cd BlitzQuiz
 3. **Open `index.html`**:
 Use any browser to open the `index.html` file and start using the app.
 
