@@ -42,7 +42,4 @@ Check out a live demo [here](https://ghaniketrajputp005.github.io/Blitz-Quiz/).
 
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request. For major changes, please open an issue first to discuss what you’d like to modify.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](link-to-license-file) file for details.
 
