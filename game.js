@@ -12,11 +12,12 @@ let score = 0;
 let questionCounter = 0;
 let availableQuesions = []; // copy of full questionset  and to take questions out of available queston arrya as we use them, so that we have unique questions always to give to user
 
-let questions = []; // our question set
+let questions = []; // our question set 
 
 // fetch("questions.json") fetch api to load local questions
 fetch(
-    'https://opentdb.com/api.php?amount=30&category=9&difficulty=easy&type=multiple' //a modern JavaScript API for making network requests. returns a Promise that resolves to the Response object representing the entire HTTP response.
+    'https://opentdb.com/api.php?amount=30&category=9&difficulty=easy&type=multiple' 
+    //a modern JavaScript API for making network requests. returns a Promise that resolves to the Response object representing the entire HTTP response.
 )
     .then((res) => { // then method is used to handle the Promise returned by fetch.then takes a callback function that is executed once the Promise is resolved.
 
@@ -70,7 +71,7 @@ startGame = () => {  // going to use this as reset
 // TO load question and choices
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        //when user is out of question just save score to local storage as key being mostrecentscore and value being score itself as strings
+        
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
         return window.location.assign('end.html');
@@ -90,6 +91,7 @@ getNewQuestion = () => {
     choices.forEach((choice) => {
         const number = choice.dataset['number'];// retreives the value of data-number attribute e.g 1,2 3 etc.
         choice.innerText = currentQuestion['choice' + number];
+        // The number variable is appended to the string 'choice', resulting in something like 'choice1', 'choice2', etc. This allows the script to select a specific choice based on the value of number
         //This approach is commonly used to dynamically populate HTML elements based on data retrieved from an object or an API response.
     });
 
